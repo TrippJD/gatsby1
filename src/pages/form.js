@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 const About = ({ location }) => (
   <Layout location={location}>
     <div>
-      <form method="post" name="test" action="#" data-netlify="true">
+      <form method="post" name="test" action="/pages/form" data-netlify="true">
         <label>
           Name
           <input type="text" name="name" id="name" />
