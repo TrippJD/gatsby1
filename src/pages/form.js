@@ -5,7 +5,13 @@ import { Link } from "gatsby"
 const About = ({ location }) => (
   <Layout location={location}>
     <div>
-      <form method="post" name="test" action="/form" data-netlify="true">
+      <form
+        method="post"
+        name="test"
+        action="/form"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field">
+        <input type="hidden" name="bot-field" />
         <label>
           Name
           <input type="text" name="name" id="name" />
