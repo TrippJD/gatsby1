@@ -1,0 +1,19 @@
+backend:
+  name: github
+  branch: master # Branch to update (optional; defaults to master)
+  repo: trippjd/gatsby1
+
+# publish_mode: editorial_workflow
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: "team"
+    label: "Team"
+    folder: "src.team"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Team Member", name: "title", widget: "string" }
+      - { label: "Bio", name: "bio", widget: "markdown" }

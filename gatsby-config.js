@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: "Tripp's Blog",
     description: "Web dev portfolio",
-    author: "JD TRipp",
+    siteUrl: "https://jdblog.netlify.com",
+    author: "JD Tripp",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -25,11 +26,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `JD Tripp Blog`,
+        short_name: `JD Blog`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#524763`,
+        theme_color: `#524763`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
@@ -44,7 +45,9 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-netlify`,
   ],
 }
