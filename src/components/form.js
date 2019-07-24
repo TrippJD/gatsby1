@@ -6,7 +6,7 @@ const Form = () => (
     <form
       className="form"
       method="post"
-      name="test"
+      name="contact"
       action="/success"
       data-netlify="true"
       data-netlify-honeypot="bot-field">
