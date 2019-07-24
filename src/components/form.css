@@ -1,0 +1,18 @@
+.form input:not([value="Clear"]),
+button,
+textarea {
+  width: 100%;
+}
+
+.form input[value="Clear"] {
+  margin-top: 20px;
+  margin-left: 89.33%;
+}
+
+.form-div {
+  background-color: rgba(133, 133, 133, 0.062);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(48, 48, 48, 0.308);
+  margin-bottom: 20px;
+}

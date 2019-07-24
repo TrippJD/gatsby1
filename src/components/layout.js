@@ -1,13 +1,6 @@
-/**
- * Layout component that queries for data
- * with Gatsby's StaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql, Link } from "gatsby"
 import Styled from "styled-components"
 import Img from "gatsby-image"
 import { Spring } from "react-spring/renderprops"
@@ -59,6 +52,7 @@ const Layout = ({ children, location }) => (
           <MainLayout>
             <div>{children}</div>
             <Archive />
+            <Link to="/contact">Contact Us</Link>
           </MainLayout>
         </>
       )}
