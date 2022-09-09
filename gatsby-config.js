@@ -36,7 +36,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
-    `gatsby-plugin-eslint`,
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
@@ -50,4 +49,4 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-netlify`,
   ],
-}
+};
